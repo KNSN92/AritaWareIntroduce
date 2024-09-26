@@ -11,10 +11,9 @@ function Slide() {
         eles.forEach(ele => {
             const element = ele as HTMLElement;
             const icon = element.querySelector("a > .icon");
-            gsap.set(icon, {
+            const anim = gsap.fromTo(icon, {
                 rotate: -10,
-            })
-            const anim = gsap.to(icon, {
+            }, {
                 rotate: 10,
 
                 duration: 2,
@@ -25,11 +24,21 @@ function Slide() {
                 paused: true,
             });
 
-            element.addEventListener("mouseEnter", () => {
+            gsap.set(icon, {
+                rotate: 0,
+            });
+
+            element.addEventListener("mouseenter", () => {
+                gsap.set(icon, {
+                    rotate: 0,
+                });
                 anim.restart();
             });
             element.addEventListener("mouseleave", () => {
-                anim.pause();
+                gsap.set(icon, {
+                    rotate: 0,
+                });
+                anim.revert();
             });
         });
     })
@@ -41,7 +50,7 @@ function Slide() {
             <h1>↓↓↓</h1>
             <Link to="/" className="to-root-link" >toMain</Link>
             <SectionSpacer height="4rem" delimiter delimiterColorOverride="#ffffff" />
-            <h1>Technology Used</h1>
+            <h1>Used Technology</h1>
             <ul id="slide-page-techs">
                 <ListElement name="Vite" url="https://ja.vitejs.dev/">
                     <img src="https://vitejs.dev/logo-with-shadow.png" alt="vite" />
