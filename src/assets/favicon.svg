@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.46 286.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #13ae67;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: YuKyo-Bold-83pv-RKSJ-H, YuKyokasho;
+        font-size: 80px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #eef4f7;
+      }
+
+      .cls-2, .cls-5 {
+        fill: #172a88;
+      }
+
+      .cls-3 {
+        fill: #f39800;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #f39800;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #c30d23;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="143.23" cy="143.23" r="141.73"/>
+  <path class="cls-7" d="M143.23,1.5c0,78.28,63.46,141.73,141.73,141.73C284.96,64.96,221.51,1.5,143.23,1.5Z"/>
+  <text class="cls-3" transform="translate(38.67 98.1)"><tspan x="0" y="0">有</tspan></text>
+  <text class="cls-2" transform="translate(102.72 160.9)"><tspan x="0" y="0">田</tspan></text>
+  <text class="cls-1" transform="translate(167.8 226.13)"><tspan x="0" y="0">焼</tspan></text>
+  <path class="cls-5" d="M1.5,143.23c0,78.28,63.46,141.73,141.73,141.73,0-78.28-63.46-141.73-141.73-141.73Z"/>
+  <circle class="cls-6" cx="143.23" cy="143.23" r="141.73"/>
+</svg>
