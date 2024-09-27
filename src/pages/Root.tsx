@@ -26,6 +26,10 @@ gsap.registerPlugin(ScrollTrigger);
 window.addEventListener("load", () => {
   ScrollTrigger.clearScrollMemory();
   window.history.scrollRestoration = "manual";
+
+  document.querySelectorAll<HTMLImageElement>("img").forEach(e => {
+    e.setAttribute("load", "lazy");
+  });
 });
 
 window.addEventListener("resize", () => {

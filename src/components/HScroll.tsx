@@ -23,11 +23,7 @@ function HScroll({ children, delimiter }: { children?: ReactNode, delimiter?: bo
                 pin: true,
                 scrub: 1,
                 end: "+="+hscrollRef.current?.scrollWidth,
-                // markers: true,
             },
-            onStart: () => console.log("hscroll start"),
-            onComplete: () => console.log("hscroll complete"),
-            onUpdate: () => console.log("hscroll update"),
         })
     });
     return (

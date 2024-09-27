@@ -55,6 +55,9 @@ function Slide() {
                 <ListElement name="Vite" url="https://ja.vitejs.dev/">
                     <img src="https://vitejs.dev/logo-with-shadow.png" alt="vite" />
                 </ListElement>
+                <ListElement name="TypeScript" url="https://www.typescriptlang.org/">
+                    <img src="https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae" alt="vitetypescript" />
+                </ListElement>
                 <ListElement name="React" url="https://ja.react.dev/">
                     <img src="https://raw.githubusercontent.com/facebook/react/cae635054e17a6f107a39d328649137b83f25972/fixtures/dom/public/react-logo.svg" alt="react" />
                 </ListElement>
@@ -77,7 +80,7 @@ function Slide() {
     );
 }
 
-function ListElement({ name, url, children }: { name: string, url: string, children: ReactNode }) {
+function ListElement({ name, url, children }: { name: string, url: string, children?: ReactNode }) {
     return (
         <li className="list-ele">
             <a href={url}>
